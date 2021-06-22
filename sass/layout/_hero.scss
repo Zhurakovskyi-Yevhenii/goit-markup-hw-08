@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  width: 100%;
   background-color: var(--background-color-grey);
   text-align: center;
   padding-top: 200px;
@@ -12,6 +12,15 @@
     url("../images/heroimg.jpg");
   background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/hero/hero-desktop@2x.jpg");
+  }
+}
+
 .hero__title {
   text-transform: uppercase;
   font-weight: 900;

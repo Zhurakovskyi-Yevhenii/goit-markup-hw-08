@@ -27,6 +27,11 @@
     fill: currentColor;
   }
 }
+@media screen and (min-width: 768px) {
+  .header-menu-btn {
+    display: none;
+  }
+}
 
 .header-logo {
   padding-top: 16px;
