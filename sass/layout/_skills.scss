@@ -1,0 +1,123 @@
+// .skills {
+//   padding-bottom: 0;
+// }
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+// .description-title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+
+.description-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .description-title {
+    text-align: left;
+  }
+}
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description {
+    max-width: 270px;
+  }
+}
+
+.skills-description-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-color-team-filters);
+}
+@media screen and (min-width: 768px) {
+  .skills-description-icon {
+    max-width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills-description-icon {
+    max-width: 270px;
+    height: 120px;
+  }
+}
+.skills-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1199px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills-list {
+    display: flex;
+    min-width: 1200px;
+  }
+  .skills-list__description-item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// .skills-list {
+//   display: flex;
+// }
+// .skills-list__description-item {
+//   width: 270px;
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .skills-description-icon {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background-color: var(--background-color-team-filters);
+// }
