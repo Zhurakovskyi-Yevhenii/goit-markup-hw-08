@@ -88,6 +88,9 @@
     flex-wrap: wrap;
     max-width: 1199px;
   }
+  .skills-list__description-itemnot:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .skills-list {

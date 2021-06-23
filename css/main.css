@@ -416,14 +416,38 @@ body {
   width: 100%;
   background-color: var(--background-color-grey);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroimg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mobile.jpg");
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url("../../images/hero/hero-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../../images/hero/hero-tablet.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url("../../images/hero/hero-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../../images/hero/hero-desktop.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: url("../../images/hero/hero-desktop@2x.jpg");
   }
@@ -432,8 +456,8 @@ body {
 .hero__title {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   color: var(--text-color-white);
 }
 
@@ -454,6 +478,16 @@ body {
 .modal-btn:hover, .modal-btn:focus {
   color: var(--text-color-white);
   background-color: var(--color-btn);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--text-color-white);
+  }
 }
 
 .description-title {
@@ -528,6 +562,9 @@ body {
     flex-wrap: wrap;
     max-width: 1199px;
   }
+  .skills-list__description-itemnot:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -543,49 +580,52 @@ body {
   }
 }
 
-.about {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
-.about-img-list {
-  display: flex;
-  margin-right: -30px;
-}
-
-.about-img-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.about-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.about-img-list-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.about-overlay {
-  padding-top: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color-white);
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
+@media screen and (min-width: 1200px) {
+  .about {
+    text-align: center;
+  }
+  .about-img-list {
+    display: flex;
+    margin-right: -30px;
+  }
+  .about-img-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .about-img-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .about-overlay {
+    padding-top: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+  }
 }
 
 .team {
@@ -600,18 +640,12 @@ body {
 
 .team-list {
   display: flex;
-  margin-left: -30px;
-  margin-top: 50px;
+  flex-direction: column;
+  margin-top: 123px;
 }
 
 .team-list-item {
-  width: 270px;
-  background-color: var(--text-color-white);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.team-list-item:not(:first-child) {
-  margin-left: 30px;
+  max-width: 450px;
 }
 
 .team-list-sub-title {
