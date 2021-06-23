@@ -1,3 +1,19 @@
+.about{
+  display: none;
+}
+.about-img-list{
+  display: none;
+}
+.about-title{
+  display: none;
+}
+.about-img-list-wrapper{
+  display: none;
+}
+.about-overlay{
+  display: none;
+}
+@media screen and (min-width:1200px){
 .about {
   text-align: center;
 }
@@ -37,4 +53,5 @@
   left: 0;
   width: 100%;
   height: 70px;
+}
 }
