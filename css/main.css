@@ -988,14 +988,16 @@ body {
 }
 
 .filters-list {
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-right: -8px;
+  margin-bottom: -15px;
 }
 
 .filters-list-item {
-  margin-left: 0px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filters-list-item:not(nth-child(3n)) {
@@ -1148,6 +1150,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .projects-img {
+    display: block;
+    width: 100%;
+  }
   .filters-list {
     display: flex;
     flex-wrap: nowrap;
