@@ -72,7 +72,7 @@
     margin-right: 50px;
   }
   .mail-tel-link {
-    display: block;
+    display: flex;
     align-items: center;
 
     color: var(--paragraph-color);
@@ -86,21 +86,21 @@
       fill: currentColor;
       margin-right: 8px;
     }
-    .current {
-      color: var(--accent-color);
-      position: relative;
+  }
+  .current {
+    color: var(--accent-color);
+    position: relative;
 
-      &::after {
-        position: absolute;
-        left: 0;
-        margin-top: 28px;
-        display: block;
-        content: "";
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
-        background-color: var(--accent-color);
-      }
+    &::after {
+      position: absolute;
+      left: 0;
+      margin-top: 28px;
+      display: block;
+      content: "";
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: var(--accent-color);
     }
   }
 }
@@ -213,19 +213,19 @@
 //   fill: currentColor;
 //   margin-right: 10px;
 // }
-// .current {
-//   color: var(--accent-color);
-//   position: relative;
+.current {
+  color: var(--accent-color);
+  position: relative;
 
-//   &::after {
-//     position: absolute;
-//     left: 0;
-//     margin-top: 28px;
-//     display: block;
-//     content: "";
-//     height: 4px;
-//     width: 100%;
-//     border-radius: 2px;
-//     background-color: var(--accent-color);
-//   }
-// }
+  &::after {
+    position: absolute;
+    left: 0;
+    margin-top: 28px;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+}
