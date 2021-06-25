@@ -3,6 +3,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 .footer-div {
   display: flex;
   flex-direction: column;
@@ -13,6 +18,7 @@
   align-items: center;
 }
 .address {
+  text-align: center;
   font-style: normal;
   font-size: 14px;
   line-height: 0.58;
@@ -71,6 +77,7 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 .footer-form-btn {
   position: relative;
   width: 200px;
@@ -118,9 +125,7 @@
   display: flex;
   justify-content: center;
   margin-top: 8px;
-}
-.footer-contacts-list-item-tel {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-tel-link {
@@ -131,7 +136,27 @@
   color: var(--color-footer-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-link-item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-color-white);
+}
 // .address-div {
 //   width: 231px;
 // }

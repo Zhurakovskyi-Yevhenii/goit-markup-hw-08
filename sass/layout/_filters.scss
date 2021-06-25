@@ -160,11 +160,13 @@
   .projects-list {
     display: flex;
     flex-wrap: wrap;
+    min-width: 768px;
   }
-  .projects-item {
-    flex-basis: calc(100% / 2 - 30px);
-    width: 100%;
+  .projects-item :nth-child(2n-1) {
+    margin-right: 30px;
+  }
 
+  .projects-item {
     background-color: var(--text-color-white);
 
     &:hover,

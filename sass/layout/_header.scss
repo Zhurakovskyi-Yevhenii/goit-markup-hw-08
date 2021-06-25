@@ -68,7 +68,9 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
+  .contacts-list-item-mail-tel:not(:last-child) {
+    margin-bottom: 10px;
+  }
   .menu-list__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -88,6 +90,7 @@
       margin-right: 8px;
     }
   }
+
   .current {
     color: var(--accent-color);
     position: relative;
