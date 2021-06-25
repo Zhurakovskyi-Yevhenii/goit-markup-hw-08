@@ -80,15 +80,21 @@
 .skills-list {
   display: flex;
   flex-direction: column;
+  max-width: 450px;
 }
-
+.skills-list__description-item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .skills-list {
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1199px;
+    min-width: 768px;
   }
-  .skills-list__description-itemnot:not(:last-child) {
+  .skills-list__description-item {
+    max-width: 354px;
+  }
+  .skills-list__description-item:nth-child(2n-1) {
     margin-right: 30px;
   }
 }
