@@ -1220,7 +1220,10 @@ body {
 @media screen and (min-width: 768px) {
   .filters-list {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .filters-list-item:not(:last-child) {
+    margin-right: 8px;
   }
   .projects-list {
     display: flex;
@@ -1469,10 +1472,22 @@ body {
   }
   .footer-form-email {
     max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .logo-footer {
+    justify-content: flex-start;
+  }
+  .footer-contacts-list-item {
+    justify-content: flex-start;
+  }
+  .footer-contacts-list-item-tel {
+    text-align: left;
+  }
   .address-div {
     text-align: left;
   }
@@ -1486,6 +1501,7 @@ body {
     margin-right: 70px;
   }
   .footer-form-email {
+    display: inline-block;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
