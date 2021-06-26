@@ -1,3 +1,6 @@
+.picture {
+  width: 100%;
+}
 .filters-list {
   justify-content: flex-start;
   display: flex;
@@ -39,6 +42,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 100%;
 }
 .projects-list-title {
   margin-bottom: 4px;
@@ -58,7 +62,6 @@
 .projects-item {
   width: 100%;
 
-  margin-right: 30px;
   margin-top: 30px;
   background-color: var(--text-color-white);
 
@@ -73,6 +76,7 @@
   border-bottom: 1px solid var(--background-color-filters);
   border-left: 1px solid var(--background-color-filters);
   border-right: 1px solid var(--background-color-filters);
+  flex-grow: 1;
 }
 .neworlean {
   padding: var(--padding-div-projects);
@@ -145,6 +149,10 @@
 }
 .projects-link {
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--text-color);
 
   &:hover .overlay,
   &:focus .overlay {
@@ -166,7 +174,7 @@
   .projects-item {
     max-width: 354px;
   }
-  .projects-item :nth-child(2n-1) {
+  .projects-item:nth-child(2n-1) {
     margin-right: 30px;
   }
 
