@@ -1180,8 +1180,12 @@ body {
   }
   .projects-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     min-width: 768px;
+  }
+  .projects-item {
+    max-width: 354px;
   }
   .projects-item :nth-child(2n-1) {
     margin-right: 30px;
@@ -1203,7 +1207,7 @@ body {
 .logo-footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .footer-div {
