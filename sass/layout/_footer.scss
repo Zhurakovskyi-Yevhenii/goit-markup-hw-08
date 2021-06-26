@@ -93,6 +93,7 @@
   color: var(--text-color-white);
   cursor: pointer;
   margin-top: 20px;
+  border: none;
 }
 .footer-form-icon {
   position: absolute;
@@ -164,11 +165,22 @@
   }
   .footer-div-link {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+  }
+  // .footer-form {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin: 0 auto;
+  // }
+  .footer-form-email {
+    max-width: 450px;
   }
 }
 @media screen and(min-width:1200px) {
+  .address-div {
+    text-align: left;
+  }
   .footer-div {
     flex-direction: row;
     display: flex;

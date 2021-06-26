@@ -56,6 +56,10 @@
     font-size: 34px;
     line-height: 1/17;
     letter-spacing: 0.02em;
+    color: var(--paragraph-color);
+  }
+  &__contacts-tel:hover,
+  &__contacts-tel:focus {
     color: var(--accent-color);
   }
   &__contacts-mail {
@@ -75,6 +79,25 @@
   }
   &__social-item:not(:first-child) {
     padding-left: 10px;
+  }
+  &__social-link {
+    color: var(--paragraph-color);
+  }
+  &__social-link:hover,
+  &__social-link:focus {
+    color: var(--accent-color);
+  }
+  &__social-list {
+    flex-wrap: wrap;
+  }
+  &__container {
+    height: 100%;
+  }
+  &__contacts-list {
+    margin-top: auto;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 
