@@ -183,15 +183,31 @@
 @media screen and(min-width:1200px) {
   .logo-footer {
     justify-content: flex-start;
+    padding: 0;
+  }
+  .footer-title {
+    text-align: left;
+  }
+  .footer-form-field {
+    justify-content: flex-start;
+  }
+  .footer-feedback {
+    margin-top: 0;
+  }
+  .footer-form {
+    text-align: left;
   }
   .footer-contacts-list-item {
     justify-content: flex-start;
+    margin-top: 9px;
+    margin-bottom: 9px;
   }
   .footer-contacts-list-item-tel {
     text-align: left;
   }
   .address-div {
     text-align: left;
+    width: 231px;
   }
   .footer-div {
     flex-direction: row;
@@ -213,7 +229,7 @@
     height: 50px;
     padding: 16px 0 16px 16px;
     margin-right: 12px;
-    margin-left: 93px;
+
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-sizing: border-box;
