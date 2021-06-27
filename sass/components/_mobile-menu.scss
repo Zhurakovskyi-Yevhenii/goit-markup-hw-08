@@ -47,6 +47,11 @@
 
     color: #212121;
   }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
+
   &__contacts-list {
     margin-top: 302px;
   }
@@ -71,6 +76,10 @@
     letter-spacing: 0.02em;
     color: var(--paragraph-color);
   }
+  &__contacts-mail:hover,
+  &__contacts-mail:focus {
+    color: var(--accent-color);
+  }
   &__social-list {
     display: flex;
     margin-top: 64px;
@@ -88,12 +97,9 @@
     line-height: 22px;
 
     letter-spacing: 0.02em;
-    color: var(--paragraph-color);
-  }
-  &__social-link:hover,
-  &__social-link:focus {
     color: var(--accent-color);
   }
+
   &__social-list {
     flex-wrap: wrap;
   }

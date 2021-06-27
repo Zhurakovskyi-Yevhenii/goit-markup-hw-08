@@ -155,6 +155,10 @@ body {
   color: #212121;
 }
 
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+
 .mobile-menu__contacts-list {
   margin-top: 302px;
 }
@@ -183,6 +187,10 @@ body {
   color: var(--paragraph-color);
 }
 
+.mobile-menu__contacts-mail:hover, .mobile-menu__contacts-mail:focus {
+  color: var(--accent-color);
+}
+
 .mobile-menu__social-list {
   display: flex;
   margin-top: 64px;
@@ -202,10 +210,6 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: var(--paragraph-color);
-}
-
-.mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
   color: var(--accent-color);
 }
 
