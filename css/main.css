@@ -110,7 +110,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 480px;
+  max-width: 100%;
   max-height: 796px;
   width: 100vw;
   height: 100vh;
@@ -1087,6 +1087,10 @@ body {
   height: 294px;
 }
 
+.projects-img {
+  width: 100%;
+}
+
 .filters-list {
   justify-content: flex-start;
   display: flex;
@@ -1484,6 +1488,8 @@ body {
 }
 
 .footer-mail-link {
+  margin-top: 8px;
+  margin-bottom: 8px;
   color: var(--color-footer-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
