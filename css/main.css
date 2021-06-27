@@ -507,13 +507,16 @@ body {
   border-color: transparent;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   fill: black;
+  background: transparent;
 }
 
 .header-mobile-menu-icon {
   fill: currentColor;
+  width: 24px;
+  height: 24px;
 }
 
 .current {
@@ -673,14 +676,14 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    min-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    min-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
   }
 }

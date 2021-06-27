@@ -19,12 +19,15 @@
   border-color: transparent;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   fill: black;
+  background: transparent;
 }
 .header-mobile-menu-icon {
   fill: currentColor;
+  width: 24px;
+  height: 24px;
 }
 .current {
   color: var(--accent-color);
